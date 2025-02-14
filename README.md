@@ -39,7 +39,7 @@ Engineering world, handles large amounts of data safely.
 
 ### Cloning the Repository
 
-```bash
+```bash {"id":"01JM257MZ4WH2CFHAEP291ZXFZ"}
 git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
 cd self-hosted-ai-starter-kit
 ```
@@ -48,9 +48,7 @@ cd self-hosted-ai-starter-kit
 
 #### For Nvidia GPU users
 
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+```sh {"id":"01JM258GZTX3Y8N9KDWSBR3J9Q"}
 docker compose --profile gpu-nvidia up
 ```
 
@@ -60,9 +58,7 @@ docker compose --profile gpu-nvidia up
 
 ### For AMD GPU users on Linux
 
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+```sh {"id":"01JM257MZ4WH2CFHAEP6R377AT"}
 docker compose --profile gpu-amd up
 ```
 
@@ -80,9 +76,7 @@ If you want to run Ollama on your mac, check the
 [Ollama homepage](https://ollama.com/)
 for installation instructions, and run the starter kit as follows:
 
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+```sh {"id":"01JM257MZ4WH2CFHAEP8XM90Z5"}
 docker compose up
 ```
 
@@ -91,7 +85,7 @@ docker compose up
 If you're running OLLAMA locally on your Mac (not in Docker), you need to modify the OLLAMA_HOST environment variable
 in the n8n service configuration. Update the x-n8n section in your Docker Compose file as follows:
 
-```yaml
+```yaml {"id":"01JM257MZ4WH2CFHAEP9PCXXXF"}
 x-n8n: &service-n8n
   # ... other configurations ...
   environment:
@@ -105,11 +99,9 @@ Additionally, after you see "Editor is now accessible via: <http://localhost:567
 2. Click on "Local Ollama service"
 3. Change the base URL to "http://host.docker.internal:11434/"
 
-#### For everyone else
+#### For CPU only
 
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+```sh {"id":"01JM257MZ4WH2CFHAEPA9FFZ1P"}
 docker compose --profile cpu up
 ```
 
@@ -147,21 +139,21 @@ language model and Qdrant as your vector store.
 
 * ### For Nvidia GPU setups:
 
-```bash
+```bash {"id":"01JM257MZ4WH2CFHAEPD99ETEY"}
 docker compose --profile gpu-nvidia pull
 docker compose create && docker compose --profile gpu-nvidia up
 ```
 
 * ### For Mac / Apple Silicon users
 
-```
+```sh {"id":"01JM257MZ4WH2CFHAEPES9KQB4"}
 docker compose pull
 docker compose create && docker compose up
 ```
 
 * ### For Non-GPU setups:
 
-```bash
+```bash {"id":"01JM257MZ4WH2CFHAEPGY90JMC"}
 docker compose --profile cpu pull
 docker compose create && docker compose --profile cpu up
 ```
@@ -231,8 +223,8 @@ Join the conversation in the [n8n Forum](https://community.n8n.io/), where you
 can:
 
 - **Share Your Work**: Show off what you’ve built with n8n and inspire others
-  in the community.
+   in the community.
 - **Ask Questions**: Whether you’re just getting started or you’re a seasoned
-  pro, the community and our team are ready to support with any challenges.
+   pro, the community and our team are ready to support with any challenges.
 - **Propose Ideas**: Have an idea for a feature or improvement? Let us know!
-  We’re always eager to hear what you’d like to see next.
+   We’re always eager to hear what you’d like to see next.
